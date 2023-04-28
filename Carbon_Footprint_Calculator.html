@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Wings of Conservation | Wings of Conservation.com </title>
+    <link rel="stylesheet" type="text/css" href="Diwali_V2.css">
+    <link rel="stylesheet" type="text/css" href="History.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serifdisplay=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="dragon.ico" type="image/x-icon">
+    </head>
+    <body style="background-image: url(bg1.png);">
+    <base target="_self">
+    <nav id="navbar">
+      <div id="logo"><img src="dragon.png" alt="Dragon logo"></div>
+    <ul>
+      <li> <a href="wings_of_conservation.html"> Home </a> </li>
+    <li> <a href="Carbon_Footprint_Calculator.html"> Carbon Footprint Calculator </a> </li>
+    <li> <a href="Contribution.html"> Do your part </a> </li>
+    <li> <a href="About_us.html"> About Us </a> </li>
+    </ul>
+    </nav>
+    <h1>Carbon Footprint Calculator</h1>
+    <p>Please answer the following questions to calculate your carbon footprint.</p>
+    <form>
+      <label>How many kilowatt-hours (kWh) of electricity do you use per month?</label>
+      <input type="number" id="electricity_usage"><br><br>
+      <label>How many therms of natural gas do you use per month?</label>
+      <input type="number" id="gas_usage"><br><br>
+      <label>How many miles do you drive your car per month?</label>
+      <input type="number" id="car_mileage"><br><br>
+      <label>How many miles do you travel by public transport per month?</label>
+      <input type="number" id="public_transport_mileage"><br><br>
+      <label>How many miles do you fly per year?</label>
+      <input type="number" id="flight_mileage"><br><br>
+      <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <p id="result"></p>
+    <script src="carbon_footprint_calculator.js"></script>
+  </body>
+</html>
